@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Culture | Explore Macau - Rotunda de Carlos da Maia</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="./css/public.css">
+  <link rel="stylesheet" href="./css/culture.css">
+  <link rel="stylesheet" href="./css/swiper.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+</head>
+<body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">東南亞文化</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">這裡有不少緬甸、泰國、印尼等東南亞地區的歸國華僑聚居。三盞燈也是東南亞沒事的匯聚之地。在“東南亞美食嘉年華”活動期間，每晚在三盞燈圓形第均有東南亞民族風情的歌舞節目上演。而且在光復街至三盞燈路段，會開設多個東南亞美食攤檔。除了美食嘉年華以外，三盞燈作爲緬甸華裔的聚居處，還會舉辦“潑水節”活動。除了潑水嘉年華外，三盞燈區也會舉行東南亞及緬甸傳統美食展，稱爲“東南亞飲食文化街”</div> 
+                    </div>
+                        <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <img src="./img/culture/culture.jpg" alt="">
+                        </div>
+                    </div>
+
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1  class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1">特色美食</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">歸僑開設的食肆各勝擅場、極具異國風味，各式美食如魚湯粉、椰汁雞麵、豬腦麵等，令來客食指大動，早已打響招牌，深受本地人以至遊客喜愛。始於2000年，每年八月中旬左右，一連七至九日，在三盞燈舉行的“東南亞美食嘉年華”，由新橋坊會、歸僑總會、緬華互助會、提柯坊會、柬埔寨華僑聯誼會合辦，市政署協辦，旅遊局贊助。
+                            活動期間，每晚在三盞燈圓形地均有東南亞民族風情的歌舞節目上演，而且在光復街至三盞燈路段，會開設多個東南亞美食攤檔，食客大可藉此良機，將各國美食“一網打盡”。</div> 
+                    </div>
+                            <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                                <img src="./img/culture/food.jpg">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">活動</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">三盞燈作為緬甸華僑的聚居處，更與自1995年起，在每年4月，由緬甸華僑互助會主辦、市政署及旅遊局協辦的“潑水節”活動。潑水節是一個流行於泰國、緬甸、柬埔寨及中國雲南等地，相當於新年的節日，人們在這節慶以清水相互潑灑，祈求洗去過去一年的不順。主辦單位除了在多處地點進行大型花車巡遊及潑水嘉年華外，也會在三盞燈區舉行東南亞及緬甸傳統美食展，稱為“東南亞飲食文化街”，以作為潑水節中一個主要項目。
+                            除了以上的活動以外，三盞燈每年亦會舉辦浴佛節、歡樂澳門街、除夕倒數等節慶嘉年華。</div> 
+                    </div>
+                            <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                                <img src="./img/culture/event.jpg">
+                            </div>
+                </div>
+            </div>
+        </div>
+    <script src="./js/swiper.js"></script> 
+    <script src="./js/swiper.animate1.0.3.min.js"></script>   
+    <script> 
+        //Swiper5
+          var mySwiper = new Swiper ('.swiper-container', {
+            on:{
+              init: function(){
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+              }, 
+              slideChangeTransitionEnd: function(){ 
+                swiperAnimate(this);
+              } 
+            }
+          }) 
+    </script>
+</body>
+</html>

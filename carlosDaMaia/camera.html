@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Camera | Explore Macau - Rotunda de Carlos da Maia</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="./css/camera.css">
+</head>
+
+<body>
+   <!-- This is the screen user see first when they click the camera btn -->
+   <div id="ready-screen" class="full-page active">
+      <input type='file' id="image-submit" />
+   </div>
+   <!-- This is the screen user see after they take a photo and after click the generate photo btn, the photo will be displayed in this page -->
+   <div id="result-screen" class="full-page">
+      <button>Show Result</button>
+   </div>
+   <div id="file-processing-box">
+      <canvas id="canvas" width="3265" height="2448.75"></canvas>
+      <img id="processing-image" src="#" alt="This is a invisible image for processing" />
+      <img class="frame" id="frame_h" src="./img/frame/street_sign.png">
+   </div>
+   <!-- partial -->
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+   <script src="./js/camera.js"></script>
+
+</body>
+
+</html>

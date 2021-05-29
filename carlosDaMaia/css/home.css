@@ -1,0 +1,163 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox */
+  -webkit-font-smoothing: antialiased;
+  /* WebKit  */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body#home {
+  overflow: hidden;
+}
+body#home #app {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body#home #app > .big-block {
+  flex: 1;
+  position: relative;
+}
+body#home #app > .big-block.sub {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2.5vh;
+  padding-right: 42px;
+}
+body#home #app > .big-block.sub:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body#home #app > .big-block.sub:after {
+  content: '';
+  display: block;
+  height: 12px;
+  width: 12px;
+  border-right: 4px solid #B5B4CE;
+  border-top: 4px solid #B5B4CE;
+  transform: rotate(45deg);
+  float: right;
+  position: absolute;
+  right: 15px;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+body#home #app > .big-block.sub h2 {
+  text-align: right;
+  z-index: 20;
+  font-size: 1.5em;
+  line-height: calc( 100vh / 6 );
+  text-shadow: 0px 0px 7.5px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  width: 100%;
+  text-transform: capitalize;
+}
+body#home #app #lamp {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  width: 45%;
+  fill: white;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+  fill: url("#norm-grad");
+}
+body#home #app #lamp .light {
+  fill: url("#light-grad");
+}
+body#home #app #proj-icon-box {
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background: #221D6C;
+  height: auto;
+}
+body#home #app #proj-icon-box #proj-icon {
+  padding: 0;
+  margin: 0;
+  height: calc( 100vh / 6 * .5 );
+  fill: white;
+  margin-right: 15px;
+}
+body#home #app #top-block {
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2.5vh;
+  /* text-transform: uppercase; */
+}
+body#home #app #top-block h1 {
+  font-size: 2em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+body#home #app #top-block h2 {
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+body#home #app #street:before {
+  background-image: url("./../img/home/street.jpg");
+}
+body#home #app #culture:before {
+  background-image: url("./../img/home/fest.jpg");
+}
+body#home #app #shop:before {
+  background-image: url("./../img/home/shop.jpg");
+}
+body#home #app #bottom-block {
+  position: absolute;
+  background: white;
+  border-top: 2px solid #221D6C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(100% / 6);
+  padding: 10px;
+  z-index: 99;
+}
+body#home #app #bottom-block a svg {
+  height: 50px;
+  width: 50px;
+}
+
+svg .darkblue {
+  fill: #221D6C;
+}
+svg .white {
+  fill: #FFFFFF;
+}
+svg .middleblue {
+  fill: #6C689D;
+}
+svg .none {
+  fill: none;
+}

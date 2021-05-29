@@ -1,0 +1,57 @@
+@charset "UTF-8";
+html, body, .full-page {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.full-page {
+  display: none;
+}
+.full-page.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ready-screen input#image-submit {
+  position: relative;
+}
+#ready-screen input#image-submit, #ready-screen input#image-submit:after {
+  text-align: center;
+  max-width: 290px;
+  height: 290px;
+  width: 100%;
+  line-height: 30px;
+  outline: 0;
+}
+#ready-screen input#image-submit:after {
+  background: url("./../svg/camera.svg"), #FFFFFF;
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+#result-screen {
+  flex-direction: column;
+}
+#result-screen img.preview {
+  width: 100%;
+  max-width: 500px;
+}
+#result-screen button {
+  height: 272.6px;
+  width: 272.6px;
+  background: #FFFFFF;
+  border: 13.63px solid #6c689d;
+  border-radius: 50%;
+  color: #221d6c;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}

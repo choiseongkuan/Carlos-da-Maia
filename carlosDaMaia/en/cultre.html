@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Culture | Explore Macau - Rotunda de Carlos da Maia</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="./../css/public.css">
+  <link rel="stylesheet" href="./../css/culture.css">
+  <link rel="stylesheet" href="./../css/swiper.css">
+  <link rel="stylesheet" href="./../css/animate.min.css">
+</head>
+<body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">Southeast Asian Culture</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <p>There are many returned overseas Chinese in Myanmar, Thailand, Indonesia and other Southeast Asian countries. The Rotunda de Carlos da Maia are also the gathering place for Southeast Asian cuisine. During the "Southeast Asian Food Carnival" event, every night in the Rotunda de Carlos da Maia, there are Southeast Asian ethnic songs and dances. In addition, a number of Southeast Asian food stalls will be opened in the Guangfu Street to Rotunda de Carlos da Maia section. In addition to the food carnival, the Rotunda de Carlos da Maia is a gathering place for Burmese Chinese, and will also host the “Water Splash Festival”. In addition to the Splashing Water Carnival, the Rotunda de Carlos da Maia District will also hold a traditional food exhibition in Southeast Asia and Myanmar, called “Southeast Asian Food and Culture Street”.</p>
+                        </div> 
+                    </div>
+                        <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <img src="./../img/culture/culture.jpg" alt="">
+                        </div>
+                    </div>
+
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1  class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1">Special Food</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <p>
+                                The restaurants opened by the returned overseas Chinese are very good at each other.
+                                They are very exotic. Various kinds of foods such as fish soup powder, coconut noodle soup, pig brain noodles, etc.,
+                                have made the guests' index finger move, have already started the signboard, and are very popular among locals and tourists. Beginning in 2000, around the middle of August,
+                                for seven to nine days, the "Southeast Asian Food Carnival" held in the Rotunda de Carlos da Maia, by the San Kio Residents' Association,
+                                the Association of Returned Overseas Chinese Macau, the MASSM, the Almirante Lacerda - Horta e Costa Residents' Association,
+                                Association of Cambodia Overseas Chinese of Macau, Co-organized by IAM and sponsored by the Tourism Bureau.
+                                <br><br>
+                                During the event, every night, there are Southeast Asian ethnic songs and dances in the Rotunda de Carlos da Maia, and there are many Southeast Asian food stalls in the Rua da Restauração to Rotunda de Carlos da Maia. The diners can take advantage of this opportunity to The food is "one net."
+                            </p>
+                        </div> 
+                    </div>
+                            <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                                <img src="./../img/culture/food.jpg">
+                            </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text">
+                        <h1 class="ani title" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">Activities</h1> 
+                        <div class="content ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                            <p>
+                                The Rotunda de Carlos da Maia is a gathering place for overseas Chinese in Myanmar. It is also a “Water Splashing Festival” organized by MASSM, IAM and the Tourism Bureau since April 1995. The Songkran Festival is popular in Thailand, Myanmar, Cambodia, and Yunnan of China. It is equivalent to the New Year's holiday. People celebrate this year with clear water and pray for the disappointment of the past year. In addition to large-scale float parades and water-filling carnivals in various locations, the organizers will also hold traditional food exhibitions in Southeast Asia and Myanmar in the Sancha Light District, known as the “Southeast Asian Food and Culture Street” as a major project in the Songkran Festival.
+                                <br>
+                                In addition to the above activities, the Rotunda de Carlos da Maia will also hold a festive carnival such as the Bathing Buddha Festival, Happy Macau Street and New Year's Eve Countdown.
+                            </p>
+                        </div> 
+                    </div>
+                            <div class="picture ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.8s" swiper-animate-delay="0.1s">
+                                <img src="./../img/culture/event.jpg">
+                            </div>
+                </div>
+            </div>
+        </div>
+    <script src="./../js/swiper.js"></script> 
+    <script src="./../js/swiper.animate1.0.3.min.js"></script>   
+    <script> 
+        //Swiper5
+          var mySwiper = new Swiper ('.swiper-container', {
+            on:{
+              init: function(){
+                swiperAnimateCache(this);
+                swiperAnimate(this);
+              }, 
+              slideChangeTransitionEnd: function(){ 
+                swiperAnimate(this);
+              } 
+            }
+          }) 
+    </script>
+</body>
+</html>
